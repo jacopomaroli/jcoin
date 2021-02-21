@@ -1,0 +1,23 @@
+{
+  "name": "JcoinSwap List",
+  "logoURI": "https://jacopomaroli.com/staticcdn/jcoin/swap.png",
+  "keywords": [
+    "defi"
+  ],
+  "timestamp": "2021-02-10T16:00:00.809+00:00",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x4A42D9DeDe320aB5bbA441eC3B22662f70A0aEdE",
+      "name": "jcoin",
+      "symbol": "JCX",
+      "decimals": 18,
+      "logoURI": "https://jacopomaroli.com/staticcdn/jcoin/coin.png"
+    }
+  ],
+  "version": {
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "jcx",
+  "version": "1.0.0",
+  "description": "Jacopo Coin",
+  "main": "truffle-config.js",
+  "scripts": {
+    "lint": "solium -d contracts",
+    "prettier": "prettier --write **/*.sol",
+    "lintfix": "npm run lint -- --fix",
+    "cover": "solidity-coverage",
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "migrate:develop": "truffle migrate --network development --reset",
+    "migrate:testnet_binance": "truffle migrate --network testnet_binance",
+    "migrate:rinkeby": "truffle migrate --network rinkeby",
+    "flatten": "truffle-flattener ./contracts/jcx.sol > build/jcxFlatten.sol",
+    "ganache": "ganache-cli --networkId 50 -p 8545 -m \"spike whip cancel pottery blade crane tomato flower ginger acid lava company\""
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.3.0",
+    "ganache-cli": "^6.12.2",
+    "openzeppelin-solidity": "^2.5.1",
+    "truffle": "^5.1.63",
+    "truffle-assertions": "^0.9.2",
+    "truffle-flattener": "^1.5.0"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.2.1",
+    "dotenv": "^8.2.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
